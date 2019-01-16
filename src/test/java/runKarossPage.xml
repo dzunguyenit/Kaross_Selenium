@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="tests">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	<test name="Kaross testcase on Chrome">
+		<parameter name="browser" value="chrome" />
+		<parameter name="url"
+			value="http://ktvn-test.s3-website.us-east-1.amazonaws.com/signin" />
+		<parameter name="version" value="2.43" />
+		<classes>
+			<class name="com.kaross.Testcase" />
+		</classes>
+	</test>
+</suite> 
